@@ -2,8 +2,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /app
 
-# Copiar os arquivos do projeto para o contêiner
-COPY *.csproj ./
+# Copiar o arquivo .csproj para o contêiner
+COPY NomeDoProjeto.csproj ./
 RUN dotnet restore
 
 COPY . ./

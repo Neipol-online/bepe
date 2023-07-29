@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copiar o arquivo .csproj para o contêiner
 COPY NomeDoProjeto.csproj ./
-RUN dotnet restore --use-current-runtime
+#RUN dotnet restore --use-current-runtime
 
 COPY . ./
 RUN dotnet publish -c Release -o out

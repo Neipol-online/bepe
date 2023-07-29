@@ -1,0 +1,8 @@
+version: 1
+services:
+  - name: api
+    env:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: "Production"
+    buildCommand: "dotnet build"
+    startCommand: "dotnet run --no-launch-profile"

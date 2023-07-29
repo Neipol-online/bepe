@@ -7,7 +7,7 @@ COPY NomeDoProjeto.csproj ./
 #RUN dotnet restore --use-current-runtime
 
 COPY . ./
-RUN dotnet publish -c Release -o out
+#RUN dotnet publish -c Release -o out
 
 # Runtime Stage
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
